@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My TodoList</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="logo-text"> GlowToDo</span>
+        <div class="nav-link-container">
+          <a class="nav-link about" href="#">About</a>
+          <button class="nav-link btn-save">Save</button>
+        </div>
+      </nav>
+    </header>
+    <div class="add-item">
+      <h1 class="add-text">Add your work to do list</h1>
+      <input class="add-input" type="text" />
+      <button class="add-btn">+</button>
+    </div>
+    <main>
+      <section class="todo-data">
+        <!-- <div class="todo-data-each" data-todo="1">
+          <span class="slh s-num">1</span><span class="slh s-todo">Eating</span>
+          <button class="done">Done</button>
+          <button class="undone">Not Yet</button>
+        </div> -->
+      </section>
+      <button class="nav-link btn-clear">Clear All</button>
+    </main>
+    <footer>
+      <p class="nav-link copyright">
+        Created by @
+        <a
+          class="nav-link owner copyright"
+          href="https://www.facebook.com/khandakarmohammad.iqbal"
+          target="_blank"
+          >Iqbal</a
+        >
+        with Love ❤. All Rights Reserved &copy;
+      </p>
+    </footer>
+    <section class="modal-overlay hidden">
+      <div class="modal">
+        <p class="massege">
+          GlowToDo Version 1.0. This web app is created by K M Iqbal. A masters
+          student of process safety and environmental engineering, in Magdeburg.
+        </p>
+        <button class="close-modal-btn">×</button>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
