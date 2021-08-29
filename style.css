@@ -22,8 +22,13 @@ nav {
   padding: 2rem;
   position: relative;
 }
+@media screen and (max-width: 550px) {
+  nav {
+    padding: 2rem 0.5rem;
+  }
+}
 .logo-text {
-  font-size: 5rem;
+  font-size: calc(1vw + 4rem);
   position: absolute;
   top: 30%;
   left: 8%;
@@ -44,11 +49,21 @@ nav {
       0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+@media screen and (max-width: 550px) {
+  .logo-text {
+    font-size: 3rem;
+  }
+}
 .nav-link-container {
   display: inline-block;
   position: absolute;
   top: 40%;
   right: 10%;
+}
+@media screen and (max-width: 550px) {
+  .nav-link-container {
+    right: 3%;
+  }
 }
 .nav-link {
   text-decoration: none;
@@ -63,6 +78,11 @@ nav {
   text-shadow: 0px 0px 1rem rgba(214, 18, 248, 0.986),
     0px 0px 2rem rgba(218, 18, 133, 0.986),
     0px 0px 3rem rgba(248, 18, 133, 0.986);
+}
+@media screen and (max-width: 550px) {
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
 }
 .add-input {
   display: block;
@@ -96,6 +116,17 @@ nav {
 .add-input:hover {
   border-right: 1px solid white;
   border-left: 1px solid white;
+}
+@media screen and (max-width: 750px) {
+  .add-input {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .add-input {
+    width: 90%;
+    margin: 1rem;
+  }
 }
 .add-item {
   height: 25vh;
@@ -147,6 +178,17 @@ nav {
   border-right: 2px solid white;
   border-left: 2px solid white;
 }
+@media screen and (max-width: 750px) {
+  .todo-data {
+    margin: 5vh auto;
+    width: 95vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .todo-data {
+    padding: 1.5rem 1rem;
+  }
+}
 .todo-data-each {
   padding: 1rem;
   background-color: black;
@@ -164,6 +206,13 @@ nav {
   font-size: 2rem;
   opacity: 0.6;
   text-shadow: 0 0 1rem white, 0 0 2rem white;
+}
+@media screen and (max-width: 550px) {
+  .slh {
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
 }
 .line-through {
   text-decoration: line-through;
@@ -192,6 +241,12 @@ nav {
   border: none;
   opacity: 0.5;
 }
+@media screen and (max-width: 550px) {
+  .done,
+  .delete {
+    letter-spacing: 0.3px;
+  }
+}
 .done:hover,
 .delete:hover {
   text-shadow: 0 0 1rem white, 0 0 2rem white, 0 0 3rem white, 0 0 4rem white;
@@ -203,6 +258,11 @@ nav {
   background: none;
   border-radius: 0.3rem;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 550px) {
+  .btn-save {
+    margin-left: 1rem;
+  }
 }
 .btn-save:active {
   transform: scale(0.9);
@@ -268,6 +328,16 @@ footer {
   transform: translate(-50%, -50%);
   letter-spacing: 3px;
   box-shadow: inset 0 0 4rem rgba(0, 132, 255, 0.411);
+}
+@media screen and (max-width: 550px) {
+  .modal {
+    width: 80%;
+    height: 80%;
+    padding: auto;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    border-radius: 1rem;
+  }
 }
 .close-modal-btn {
   padding: 0.5rem 1rem;
